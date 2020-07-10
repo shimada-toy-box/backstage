@@ -73,7 +73,7 @@ export const BuildDetailsPage = () => {
   return (
     <div className={classes.root}>
       <Typography className={classes.title} variant="h3">
-        <Link to="/builds">
+        <Link to="/github-actions">
           <Typography component="span" variant="h3" color="primary">
             &lt;
           </Typography>
@@ -127,12 +127,12 @@ export const BuildDetailsPage = () => {
                 >
                   {details?.overviewUrl && (
                     <Button>
-                      <Link to={details.overviewUrl}>GitHub</Link>
+                      <a href={details.overviewUrl}>GitHub</a>
                     </Button>
                   )}
                   {details?.logUrl && (
                     <Button>
-                      <Link to={details.logUrl}>Logs</Link>
+                      <a href={details.logUrl}>Logs</a>
                     </Button>
                   )}
                 </ButtonGroup>
